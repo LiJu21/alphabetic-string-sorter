@@ -1,0 +1,31 @@
+{
+  "name": "alphabetic-string-sorter",
+  "version": "1.0.0",
+  "description": "A TypeScript project to sort strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiJu21/alphabetic-string-sorter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiJu21/alphabetic-string-sorter/issues"
+  },
+  "homepage": "https://github.com/LiJu21/alphabetic-string-sorter#readme",
+  "devDependencies": {
+    "@swc/core": "^1.4.2",
+    "@swc/helpers": "^0.5.6",
+    "@swc/wasm": "^1.4.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.22",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
