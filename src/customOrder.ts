@@ -1,8 +1,8 @@
 /**
  * This function first validate the input customAlphabet to make sure it contains 
- * exactly 26 letters. Then it converts all characters to lowercase. It splits 
- * the string and sorts them according to the custom alphabet order. 
- * Finally it joins these characters back to a new string.
+ * exactly 26 letters. Then it converts all characters of the string to be ordered 
+ * to lowercase. It splits the string and sorts them according to the custom 
+ * alphabet order. Finally it joins these characters back to a new string.
  * 
  * @example
  * customOrder("123abcABC", ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'])
