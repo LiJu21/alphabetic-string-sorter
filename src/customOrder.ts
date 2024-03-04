@@ -33,7 +33,7 @@ export function customOrder(input: string, customAlphabet: string[] = 'abcdefghi
 
     let customAlphabetLower = Array.from(seenLetters);
     return input.toLowerCase().split('').sort((a, b) => {
-        return customAlphabetLower.indexOf(a.toLowerCase()) - customAlphabetLower.indexOf(b.toLowerCase());
+        return customAlphabetLower.indexOf(a) - customAlphabetLower.indexOf(b);
     }).join('');
 }
 
