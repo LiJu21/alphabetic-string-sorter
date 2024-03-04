@@ -48,4 +48,11 @@ describe('customOrder-test', () => {
         const invalidAlphabetWithNonLetter = 'abcdefghijklmnopqrstuvwxy,'.split('');
         expect(() => customOrder("test", invalidAlphabetWithNonLetter)).toThrow('Custom alphabet must only contain English letters.');
     });
+
+    test('function works when custom alphabet contains uppercase letters', () => {
+        let customAlphabet = 'zyxwvutsrqponmlkjihgfedcbA'.split('');
+        expect(customOrder('abcz', customAlphabet)).toBe('zcba');
+        customAlphabet = 'zyxwvutsrqponmlkjihgfedcBa'.split('');
+        expect(customOrder('abcz', customAlphabet)).toBe('zcba');
+    });
 });

@@ -31,8 +31,9 @@ export function customOrder(input: string, customAlphabet: string[] = 'abcdefghi
         seenLetters.add(char.toLowerCase());
     }
 
+    let customAlphabetLower = Array.from(seenLetters);
     return input.toLowerCase().split('').sort((a, b) => {
-        return customAlphabet.indexOf(a.toLowerCase()) - customAlphabet.indexOf(b.toLowerCase());
+        return customAlphabetLower.indexOf(a.toLowerCase()) - customAlphabetLower.indexOf(b.toLowerCase());
     }).join('');
 }
 
